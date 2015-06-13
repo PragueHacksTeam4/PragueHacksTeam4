@@ -19,7 +19,7 @@ for ( $i = 0; $i < count( $res ); $i ++ ) {
 	foreach ( $res[ $i ] as $key => $value ) {
 
 		// Check only Local Police department in Prague 7 or 8
-		if ( $key == 'Contact_address' && ( strpos( $value, 'Praha 7' ) or strpos( $value, 'Praha 8' ) ) ) {
+		if ( $key == 'Contact_address' && ( strpos( $value, 'Praha 8' ) or strpos( $value, 'Praha 9' ) ) ) {
 
 			// Get all the crime stats for targeted department
 			$url_data        = 'http://www.mapakriminality.cz/api/crimes?areacode=' . $res[ $i ]->Code . '&crimetypes=101-903';
