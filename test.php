@@ -1,5 +1,5 @@
 Ahoj Praho!
-
+<?
 $msmlurl = 'https://ussouthcentral.services.azureml.net/workspaces/55ae579bdbe642f2a33389eac9b3b66d/services/0254fbfde85f4efe8117e31a14784bdc/execute?api-version=2.0&details=true'
 $data = "{
   "Inputs": {
@@ -41,3 +41,4 @@ $context  = stream_context_create($options);
 $result = file_get_contents($url, false, $context);
 
 var_dump($result);
+?>
